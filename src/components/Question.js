@@ -19,14 +19,6 @@ function Question({ question, onAnswered }) {
     }
   }, [timeRemaining, onAnswered])
 
-  //cleanup function
-
-  // if (timeRemaining === 0) {
-  //   setTimeRemaining(10)
-  // }
-
-
-
   function handleAnswer(isCorrect) {
     setTimeRemaining(10);
     onAnswered(isCorrect);
